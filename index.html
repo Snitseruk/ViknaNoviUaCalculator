@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+</head>
+
+<body>
+    <div class="container post">
+        <div class="row">
+            <div class="col-12">
+                <h1>Калькулятор стоимости окон</h1>
+            </div>
+            <div class="col-12">
+                <div class="tabs calculator">
+                    <ul class="tab-links">
+                        <li><span>Параметры вашего окна</span></li>
+                        <li class="tab-links_item active" data-tab="1">
+                            <a href="#"> <img alt="" src="images/gl-mini.jpg" /></a>
+                        </li>
+                        <li class="tab-links_item" data-tab="2">
+                            <a href="#"><img alr="" src=" images/2dls-mini.jpg"></a>
+                        </li>
+                        <li class="tab-links_item" data-tab="3">
+                            <a href="#"> <img alt="" src="images/3dls-mini.jpg" /></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tab-content_item active" data-tab="1">
+                        <div class="row">
+                            <div class="col-md-8 d-none d-md-inline-block">
+                                <div class="sliderHeight-one">
+                                    <input type="number" class="inputHeight-one align-middle">
+                                    <div class="height-slider-one"></div>
+                                </div>
+                                <div class="pic-one">
+                                    <img src="images/gluhaya.jpg">
+                                </div>
+                                <div class="sliderWidth-one">
+                                    <input type="number" class="inputWidth-one">
+                                    <div class="width-slider-one"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div id="parametersOne">
+                                    <select class="form-inputOne" id="colourOne">
+                                        <option value="images/gluhaya.jpg" selected disabled>Выберите цвет окна
+                                        </option>
+                                        <option value="images/gluhaya.jpg">Белый</option>
+                                        <option value="images/gluhaya-color.jpg">
+                                            Ламинированый(орех, дуб, антрацит)</option>
+                                    </select>
+                                    <select class="form-inputOne" id="profilOne">
+                                        <option value="select" disabled selected>Выберите профильную систему</option>
+                                        <option value="">WDS 5S (5 камер)</option>
+                                        <option value="">WDS 6S(6 камер)</option>
+                                        <option value="">WDS 7S(6 камер)</option>
+                                    </select>
+
+                                    <select class="form-inputOne" id="furnitura1">
+                                        <option value="select" disabled selected>Выбирите фурнитуру</option>
+                                        <option value="vorne">VORNE(Турция)</option>
+                                        <option value="siegenia">SIEGENIA(Германия)</option>
+                                    </select>
+                                    <select class="form-inputOne" id="steklopaket1">
+                                        <option value="select" disabled selected>Выберите тип стеклопакета</option>
+                                        <option value="twokamera">Двухкамерный, обычное стекло</option>
+                                        <option value="energosafe">Двухкамерный с энергосберегающим
+                                            стеклом
+                                        </option>
+                                    </select>
+                                    <div class="counter">
+                                        <button id="btnOne"><a href="#">Расчитать</a></button><br>
+                                        <span id="totalHrnOne"> </span>
+                                        <span id="errorOne"> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content_item" data-tab="2">
+                    <div class="row">
+                        <div class="col-md-8 d-none d-md-inline-block">
+                            <div class="sliderHeight-two">
+                                <input type="number" class="inputHeight-two">
+                                <div class="height-slider-two"></div>
+                            </div>
+                            <div class="pic-two">
+                                <img alt="" src="images/2dls.jpg">
+                            </div>
+                            <div class="sliderWidth-two">
+                                <input type="number" class="inputWidth-two">
+                                <div class="width-slider-two"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <div id="parametersTwo">
+                                <select class="form-inputTwo" id="colourTwo">
+                                    <option value="images/2dls-mini.jpg" disabled selected>Выберите цвет
+                                        окна
+                                    </option>
+                                    <option value="images/2dls.jpg">Белый</option>
+                                    <option value="images/2dls-color.jpg">
+                                        Ламинированый(орех, дуб,
+                                        антрацит)</option>
+                                </select>
+                                <select class="form-inputTwo" id="profilTwo">
+                                    <option value="select" disabled selected>Выберите профильную систему
+                                    </option>
+                                    <option value="OneWds5">WDS 5S (5 камер)</option>
+                                    <option value="OneWds6">WDS 6S(6 камер)</option>
+                                    <option value="OneWds7">WDS 7S(6 камер)</option>
+                                </select>
+                                <select class="form-inputTwo" id="furnitura2">
+                                    <option value="select" disabled selected>Выбирите фурнитуру</option>
+                                    <option value="vorne">VORNE(Турция)</option>
+                                    <option value="siegenia">SIEGENIA(Германия)</option>
+                                </select>
+
+                                <select class="form-inputTwo" id="steklopaket2">
+                                    <option value="select" disabled selected>Выберите тип стеклопакета</option>
+                                    <option value="twokamera">Двухкамерный, обычное стекло</option>
+                                    <option value="energosafe">Двухкамерный с энергосберегающим
+                                        стеклом
+                                    </option>
+                                </select>
+
+                                <div class="counter">
+                                    <button id='btnTwo'><a href="#">Расчитать</a></button><br>
+                                    <span id="totalHrnTwo"> </span>
+                                    <span id="errorTwo"> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content_item" data-tab="3">
+                    <div class="row">
+                        <div class="col-md-8 d-none d-md-inline-block">
+                            <div class="sliderHeight-three">
+                                <input type="number" class="inputHeight-three">
+                                <div class="height-slider-three"></div>
+                            </div>
+                            <div class="pic-three">
+                                <img alt="" src="images/3dls.jpg">
+                            </div>
+                            <div class="sliderWidth-three">
+                                <input type="number" class="inputWidth-three">
+                                <div class="width-slider-three"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-12">
+                            <div id="parametersThree">
+                                <select class="form-inputThree" id="colourThree">
+                                    <option value="images/3dls.jpg" disabled selected>Выберите цвет
+                                        окна
+                                    </option>
+                                    <option value="images/3dls.jpg">Белый</option>
+                                    <option value="images/3dls-color.jpg">
+                                        Ламинированый(орех, дуб,
+                                        антрацит)</option>
+                                </select>
+                                <select class="form-inputThree" id="profilThree">
+                                    <option value="select" disabled selected>Выберите профильную систему
+                                    </option>
+                                    <option value="OneWds5">WDS 5S (5 камер)</option>
+                                    <option value="OneWds6">WDS 6S(6 камер)</option>
+                                    <option value="OneWds7">WDS 7S(6 камер)</option>
+                                </select>
+                                <select class="form-inputThree" id="furnitura3">
+                                    <option value="select" disabled selected>Выбирите фурнитуру</option>
+                                    <option value="vorne">VORNE(Турция)</option>
+                                    <option value="siegenia">SIEGENIA(Германия)</option>
+                                </select>
+                                <select class="form-inputThree" id="steklopaket3">
+                                    <option value="select" disabled selected>Выберите тип стеклопакета</option>
+                                    <option value="twokamera">Двухкамерный, обычное стекло</option>
+                                    <option value="energosafe">Двухкамерный с энергосберегающим
+                                        стеклом
+                                    </option>
+                                </select>
+
+                                <div class="counter">
+                                    <button id="btnThree"><a href="#">Расчитать</a></button><br>
+                                    <span id="totalHrnThree"> </span>
+                                    <span id="errorThree"> </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

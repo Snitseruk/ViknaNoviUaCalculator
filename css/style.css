@@ -1,0 +1,233 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.post{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.h1{
+    font-weight: 500;
+    font-family: 'Oswald',sans-serif;
+}
+form{
+    padding: 20px 0 20px 0;
+}
+li{
+    list-style:none;
+    display:inline-block;
+    box-sizing: border-box;
+}
+/*  */
+.pic-one, .pic-two, .pic-three{
+    display:inline-block;
+    padding-left: 90px;
+    padding-top: 8px;
+}
+
+.calculator{
+overflow:hidden;
+}
+ .tab-links{
+display:inline-block;
+background-color:#1798fe;
+border: 1px solid #cacaca;
+box-shadow: 0 1px 5px rgba(0,0,0,.2);
+padding:15px 15px;
+margin: 20px 0;
+font-size: 25px;
+font-weight: 500;
+font-family: 'Oswald',sans-serif;
+ } 
+
+ .tab-links>li{
+    padding:10px;
+    margin-right:3px;
+ }
+.tab-content_item.active{
+display:block;
+}
+.tab-content_item{
+  display:none;
+}
+.tab-links_item.active{
+    background-color: rgba(22,87,156,.5);
+    border-radius: 3px;
+}
+
+#parametersOne, #parametersTwo, #parametersThree{
+    width: 255px;
+    float:right;
+    margin-top: 10px;
+}
+
+#parametersOne >.invalid, #parametersTwo>.invalid, #parametersThree>.invalid{
+    border: 2px solid #1798fe;
+    background-color: #1798fe;
+    color:white;
+}
+
+#parametersOne >select, #parametersTwo >select, #parametersThree >select{
+    border-radius: 0;
+    color: #444;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+   
+
+   /* Slider */
+
+.sliderHeight-one, .sliderHeight-two, .sliderHeight-three{
+    height:95%;
+    float:left;
+    padding-top: 8px;
+}
+.height-slider-one, .height-slider-two, .height-slider-three{
+    float:right;
+    height: 95%;
+    padding-top:15px;
+    margin: 5px;
+   }
+.inputHeight-one, .inputHeight-two, .inputHeight-three{
+  padding: 7px;
+  margin:5px 5px;
+  width: 70px;
+  text-align: center;
+  border-radius:0.25em;
+  border: 1px solid #ced4da;
+  background-color: #1798fe;
+  color:white;
+  }
+.width-slider-one, .width-slider-two, .width-slider-three{
+  margin:5px;
+  }
+.sliderWidth-one, .sliderWidth-two, .sliderWidth-three{
+  width: 80%; 
+  padding-left: 90px;
+  margin-left: 80px;
+  }
+
+.inputWidth-one, .inputWidth-two, .inputWidth-three {
+  padding: 7px;
+  margin:10px ;
+  width: 70px;
+  text-align:center;
+  border-radius:0.25em;
+  border: 1px solid #ced4da;
+  background-color: #1798fe;
+  color:white;
+  }
+  .noUi-horizontal{
+    height: 10px!important;}
+.noUi-vertical {
+    width: 10px!important;}
+ .noUi-vertical .noUi-handle:after, .noUi-vertical .noUi-handle:before {
+    width: 6px!important;
+    height: 1px!important;
+    left: 4px!important;
+  }
+   .noUi-vertical .noUi-handle {
+    width: 16px!important;
+    height: 30px!important;
+    right: -4px!important;
+    top: -17px!important;
+}
+.noUi-horizontal .noUi-handle {
+    width: 30px!important;
+    height: 16px!important;
+    right: -17px!important;
+    top: -4px!important;
+}
+.noUi-horizontal .noUi-handle:after, .noUi-horizontal .noUi-handle:before {
+    width: 1px!important;
+    height: 6px!important;
+    top: 4px!important;
+  }
+.noUi-touch-area{
+background-color:#1798fe;
+}
+
+
+/* Button */
+#btnOne,#btnTwo, #btnThree{
+      margin-top: 40px;
+    margin-left: 3px;
+    border-color:#1798fe;
+    background-color: none;
+    border-radius: .25rem;
+ }
+
+#btnOne>a,#btnTwo>a, #btnThree>a{
+  font-size: 15px;
+    color: #26415d; 
+    padding: 0 20px;
+    font-weight: 400;
+    text-decoration: none;
+    box-shadow: 0 1px 15px rgba(0,0,0,.2);
+}
+
+#btnOne:hover,#btnTwo>a:hover, #btnThree>a:hover{
+background-color:#1397ff;
+border:1px solid #1397ff;
+}
+#totalHrnOne,#totalHrnTwo,#totalHrnThree{
+  margin-top:10px;
+  font-size: 22px;
+}
+/*------------------------------Error message--------------------------*/
+.error{
+    margin-top:10px;
+  font-size: 18px;
+}
+/*--------------------------------------------------------------*/
+  /* Убираем стрелки для input type number */
+  input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Это для браузера Firefox: */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
