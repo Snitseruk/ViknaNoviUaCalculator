@@ -257,26 +257,27 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const parametersOne = document.getElementById('parametersOne')
     const profilOne = document.getElementById('profilOne');
     const colourOne = document.getElementById('colourOne');
+    const furnituraOne = document.getElementById('furnitura1');
     let image = document.querySelector('.pic-one img');
-
     let obj;
 
     parametersOne.addEventListener('change', e => {
         const colourOptionsIndex = colourOne.options[colourOne.selectedIndex].index;
         image.src = colourOne.value;
         const profilOneIndex = profilOne.options[profilOne.selectedIndex].index;
-
-        if (profilOneIndex === 1 && colourOptionsIndex === 1) {
+        const steklopaketOneIndex = steklopaketOne.options[steklopaketOne.selectedIndex].index;
+        const furnituraOneIndex = furnituraOne.options[furnituraOne.selectedIndex].index;
+        if (profilOneIndex === 1 && colourOptionsIndex === 1 && steklopaketOneIndex == 1 && furnituraOneIndex > 0) {
             obj = objOneWds5;
-        } else if (profilOneIndex === 2 && colourOptionsIndex === 1) {
+        } else if (profilOneIndex === 2 && colourOptionsIndex === 1 && steklopaketOneIndex == 1 && furnituraOneIndex > 0) {
             obj = objOneWds6;
-        } else if (profilOneIndex === 3 && colourOptionsIndex === 1) {
+        } else if (profilOneIndex === 3 && colourOptionsIndex === 1 && steklopaketOneIndex == 1 && furnituraOneIndex > 0) {
             obj = objOneWds7;
-        } else if (profilOneIndex === 1 && colourOptionsIndex === 2) {
+        } else if (profilOneIndex === 1 && colourOptionsIndex === 2 && steklopaketOneIndex == 1 && furnituraOneIndex > 0) {
             obj = objOneWds5Coloured;
-        } else if (profilOneIndex === 2 && colourOptionsIndex === 2) {
+        } else if (profilOneIndex === 2 && colourOptionsIndex === 2 && steklopaketOneIndex == 1 && furnituraOneIndex > 0) {
             obj = objOneWds6Coloured;
-        } else if (profilOneIndex === 3 && colourOptionsIndex === 2) {
+        } else if (profilOneIndex === 3 && colourOptionsIndex === 2 && steklopaketOneIndex == 1 && furnituraOneIndex > 0) {
             obj = objOneWds7Coloured;
         }
     })
@@ -285,23 +286,26 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const parametersTwo = document.getElementById('parametersTwo')
     const profilTwo = document.getElementById('profilTwo');
     const colourTwo = document.getElementById('colourTwo');
+    const furnituraTwo = document.getElementById('furnitura2');
     let imageTwo = document.querySelector('.pic-two img');
 
     parametersTwo.addEventListener('change', e => {
         const profilTwoIndex = profilTwo.options[profilTwo.selectedIndex].index;
         let colourOptionsIndexTwo = colourTwo.options[colourTwo.selectedIndex].index;
         imageTwo.src = colourTwo.value;
-        if (profilTwoIndex === 1 && colourOptionsIndexTwo === 1) {
+        const steklopaketTwoIndex = steklopaketTwo.options[steklopaketTwo.selectedIndex].index;
+        const furnituraTwoIndex = furnituraTwo.options[furnituraTwo.selectedIndex].index;
+        if (profilTwoIndex === 1 && colourOptionsIndexTwo === 1 && steklopaketTwoIndex == 1 && furnituraTwoIndex > 0) {
             obj = objTwoWds5;
-        } else if (profilTwoIndex === 2 && colourOptionsIndexTwo === 1) {
+        } else if (profilTwoIndex === 2 && colourOptionsIndexTwo === 1 && steklopaketTwoIndex == 1 && furnituraTwoIndex > 0) {
             obj = objTwoWds6;
-        } else if (profilTwoIndex === 3 && colourOptionsIndexTwo === 1) {
+        } else if (profilTwoIndex === 3 && colourOptionsIndexTwo === 1 && steklopaketTwoIndex == 1 && furnituraTwoIndex > 0) {
             obj = objTwoWds7;
-        } else if (profilTwoIndex === 1 && colourOptionsIndexTwo === 2) {
+        } else if (profilTwoIndex === 1 && colourOptionsIndexTwo === 2 && steklopaketTwoIndex == 1 && furnituraTwoIndex > 0) {
             obj = objTwoWds5Coloured;
-        } else if (profilTwoIndex === 2 && colourOptionsIndexTwo === 2) {
+        } else if (profilTwoIndex === 2 && colourOptionsIndexTwo === 2 && steklopaketTwoIndex == 1 && furnituraTwoIndex > 0) {
             obj = objTwoWds6Coloured;
-        } else if (profilTwoIndex === 3 && colourOptionsIndexTwo === 2) {
+        } else if (profilTwoIndex === 3 && colourOptionsIndexTwo === 2 && steklopaketTwoIndex == 1 && furnituraTwoIndex > 0) {
             obj = objTwoWds7Coloured;
         }
     })
@@ -309,24 +313,26 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const parametersThree = document.getElementById('parametersThree')
     const profilThree = document.getElementById('profilThree');
     const colourThree = document.getElementById('colourThree');
+    const furnituraThree = document.getElementById('furnitura3');
     let imageThree = document.querySelector('.pic-three img');
 
     parametersThree.addEventListener('change', e => {
         const profilThreeIndex = profilThree.options[profilThree.selectedIndex].index;
         let colourOptionsIndexThree = colourThree.options[colourThree.selectedIndex].index;
         imageThree.src = colourThree.value;
-
-        if (profilThreeIndex === 1 && colourOptionsIndexThree === 1) {
+        const steklopaketThreeIndex = steklopaketThree.options[steklopaketThree.selectedIndex].index;
+        const furnituraThreeIndex = furnituraThree.options[furnituraThree.selectedIndex].index;
+        if (profilThreeIndex === 1 && colourOptionsIndexThree === 1 && steklopaketThreeIndex == 1 && furnituraThreeIndex > 0) {
             obj = objThreeWds5;
-        } else if (profilThreeIndex === 2 && colourOptionsIndexThree === 1) {
+        } else if (profilThreeIndex === 2 && colourOptionsIndexThree === 1 && steklopaketThreeIndex == 1 && furnituraThreeIndex > 0) {
             obj = objThreeWds6;
-        } else if (profilThreeIndex === 3 && colourOptionsIndexThree === 1) {
+        } else if (profilThreeIndex === 3 && colourOptionsIndexThree === 1 && steklopaketThreeIndex == 1 && furnituraThreeIndex > 0) {
             obj = objThreeWds7;
-        } else if (profilThreeIndex === 1 && colourOptionsIndexThree === 2) {
+        } else if (profilThreeIndex === 1 && colourOptionsIndexThree === 2 && steklopaketThreeIndex == 1 && furnituraThreeIndex > 0) {
             obj = objThreeWds5Coloured;
-        } else if (profilThreeIndex === 2 && colourOptionsIndexThree === 2) {
+        } else if (profilThreeIndex === 2 && colourOptionsIndexThree === 2 && steklopaketThreeIndex == 1 && furnituraThreeIndex > 0) {
             obj = objThreeWds6Coloured;
-        } else if (profilThreeIndex === 3 && colourOptionsIndexThree === 2) {
+        } else if (profilThreeIndex === 3 && colourOptionsIndexThree === 2 && steklopaketThreeIndex == 1 && furnituraThreeIndex > 0) {
             obj = objThreeWds7Coloured;
         }
     })
@@ -436,6 +442,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
         })
     };
 
+    let priceForWhiteOne = 40;
+    let priceforLaminationOne = 0.5;
+
     const time = 1000;
     const step = 10;
 
@@ -463,15 +472,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
             price = obj[widthAmountOne[w]][h];
         } if (h === maxElH && w > 0 && w !== maxElW) {
             price = obj[widthAmountOne[w1]][h];
-        } if (h > 0 && w > 0 && w !== maxElW && h !== maxElH) {
+        }  if (h > 0 && w > 0 && w !== maxElW && h !== maxElH) {
             price = obj[widthAmountOne[w1]][h1];
+        }if (h > 0 && w > 0 && w == maxElW && h !== maxElH) {
+            price = obj[widthAmountOne[w1]][h];
         } if (h === maxElH && w === maxElW) {
             price = obj[widthAmountOne[w]][h];
         }
         //////////ADD for counting steklopaket////////////////////////////////
         const steklopaketOneIndex = steklopaketOne.options[steklopaketOne.selectedIndex].index;
-        let priceForWhiteOne = 40;
-        let priceforLaminationOne = 0.5;
         function addStekloPaket() {
             const colourOptionsIndex = colourOne.options[colourOne.selectedIndex].index;
             if (steklopaketOneIndex === 2 && colourOptionsIndex === 1) {
@@ -491,7 +500,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 clearInterval(interval);
                 n === price;
             }
-            totalHrnOne.innerHTML = "Цена от: " + n + " грн."
+            totalHrnOne.innerText = "Цена от: " + n + " грн."
         }, t);
     };
 
@@ -629,7 +638,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
             price = obj[widthAmountTwo[wTwo]][h2];
         } if (h2 > 0 && w2 > 0 && w2 !== maxElTwoW && h2 !== maxElTwoH) {
             price = obj[widthAmountTwo[wTwo]][hTwo];
-        } if (h2 === maxElTwoH && w2 === maxElTwoW) {
+        } if (h2 > 0 && w2 > 0 && w2 == maxElTwoW && h2 !== maxElTwoH) {
+            price = obj[widthAmountTwo[wTwo]][h2];
+        }
+        if (h2 === maxElTwoH && w2 === maxElTwoW) {
             price = obj[widthAmountTwo[w2]][h2];
         }
 
@@ -764,7 +776,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
                 errorThree.innerText = 'Пожалуйста, Выберите необходимые параметры';
             } if (selNum > 0) {
                 sel.classList.remove('invalid');
-                errorThree.innerText = '';
+                errorThree.innerText = ' ';
             }
         })
     };
@@ -793,7 +805,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
             price = obj[widthAmountThree[wThree]][h3];
         } if (h3 > 0 && w3 > 0 && w3 !== maxElThreeW && h3 !== maxElThreeH) {
             price = obj[widthAmountThree[wThree]][hThree];
-        } if (h3 === maxElThreeH && w3 === maxElThreeW) {
+        } if (h3 > 0 && w3 > 0 && w3 == maxElThreeW && h3 !== maxElThreeH) {
+            price = obj[widthAmountThree[wThree]][h3];
+        }
+        if (h3 === maxElThreeH && w3 === maxElThreeW) {
             price = obj[widthAmountThree[w3]][h3];
         }
         //////////ADD for counting steklopaket////////////////////////////////
